@@ -18,7 +18,7 @@ abbrlink:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://example.com/
+url: https://meloop.space/
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
@@ -134,7 +134,7 @@ theme: fomalhaut
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repository: https://github.com/yourname/yourname.github.io.git # 这个Github仓库用自动部署即可
+    repository: https://github.com/JakinQ/my-site.git # 这个Github仓库用自动部署即可
     branch: main
   - type: baidu_url_submitter
   # - type: git
@@ -209,7 +209,7 @@ baidusitemap:
 # 主动推送百度，被百度收录
 baidu_url_submit:
   count: 10 # 提交最新的10个链接
-  host: https://example.com # 百度站长平台中注册的域名
+  host: https://meloop.space # 百度站长平台中注册的域名
   token: YOUR_BAIDU_TOKEN # 秘钥，百度站长平台 > 推送接口 > 接口调用地址中token字段
   path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里，不用改
 
@@ -246,9 +246,9 @@ gitcalendar:
   #   name: content
   #   index: 0
   # simplemode: true
-  user: yourname # git用户名
+  user: JakinQ # git用户名
   apiurl: "https://gitcalendar.example.com" # 你的 gitcalendar 服务地址
-  jsonurl: "https://cdn.jsdelivr.net/gh/yourname/gitcalendar-data@main/data.json" # 方案B：GitHub Action 定时更新的数据
+  jsonurl: "https://cdn.jsdelivr.net/gh/JakinQ/gitcalendar-data@main/data.json" # 方案B：GitHub Action 定时更新的数据
   minheight:
     pc: 320px #桌面端最小高度
     mibile: 0px #移动端最小高度

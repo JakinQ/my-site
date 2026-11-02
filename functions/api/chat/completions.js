@@ -40,7 +40,7 @@ function fail(status, message) { return json({ error: { message: message } }, st
  *   AI_PROXY_ALLOW_SUFFIXES  可选：改默认域名后缀，默认 example.com,example.com
  * 另外始终放行：localhost / 127.0.0.1 / ::1 / *.local（本地调试）
  * 与 *.vercel.app / *.pages.dev（平台预览域名）。 */
-const DEFAULT_SUFFIXES = 'example.com';
+const DEFAULT_SUFFIXES = 'meloop.space';
 
 function normOrigin(s) {
   s = String(s == null ? '' : s).trim().replace(/\/+$/, '');

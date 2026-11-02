@@ -25,7 +25,7 @@
  */
 const UPSTREAM = String(process.env.DEEPSEEK_API_BASE || 'https://api.deepseek.com').replace(/\/+$/, '');
 const MODEL = String(process.env.DEEPSEEK_MODEL || 'deepseek-chat');
-const DEFAULT_ORIGINS = 'https://example.com,https://www.example.com';
+const DEFAULT_ORIGINS = 'https://meloop.space,https://www.meloop.space';
 const MAX_BODY_BYTES = 400 * 1024;
 const MAX_TOKENS_CAP = 8192;
 const MAX_MESSAGES = 24;
@@ -51,7 +51,7 @@ function allowSuffixesNode() { return allowSuffixes(process.env); }
  *   AI_PROXY_ALLOW_SUFFIXES  可选：改默认域名后缀，默认 example.com,example.com
  * 另外始终放行：localhost / 127.0.0.1 / ::1 / *.local（本地调试）
  * 与 *.vercel.app / *.pages.dev（平台预览域名）。 */
-const DEFAULT_SUFFIXES = 'example.com';
+const DEFAULT_SUFFIXES = 'meloop.space';
 
 function normOrigin(s) {
   s = String(s == null ? '' : s).trim().replace(/\/+$/, '');
